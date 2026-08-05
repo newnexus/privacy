@@ -31,15 +31,17 @@
 <body>
 
 <h1>Privacy Policy — Guess When</h1>
-<p class="meta">Last updated 1 August 2026</p>
+<p class="meta">Last updated 5 August 2026</p>
 
 <p><strong>Guess When</strong> is a history trivia game published by KozzzyGames
 (package <code>com.kozzzygames.guesswhen</code>). This policy explains what the game stores,
 what it sends off your device, and who else can see it.</p>
 
-<p>The game does not ask for your real name, email address, phone number or location, and it
+<p>The game itself does not ask for your real name, email address or phone number, and it
 has no account to sign up for. You are identified only by a randomly generated ID and by a
-nickname you choose yourself.</p>
+nickname you choose yourself. It does not use GPS or precise location; however, the advertising
+it shows infers your <strong>approximate</strong> location from your IP address (see
+<em>Advertising</em> below).</p>
 
 <p><strong>One thing worth knowing about the nickname.</strong> When the game first asks what
 to call you, it pre-fills the box with your device's name — because that is usually a better
@@ -56,7 +58,6 @@ that is the name other players will see. You can change it later from your Profi
   <tr><td>Settings — language, timeline orientation, custom game set-up</td><td>To remember your preferences</td></tr>
   <tr><td>Your best score</td><td>Compared against the leaderboard before submitting</td></tr>
   <tr><td>A cached copy of the question deck and card images</td><td>So the game is playable offline</td></tr>
-  <tr><td>Reports you submit about a card</td><td>Currently stored locally only, to improve the deck</td></tr>
 </table>
 
 <h2>What is sent to our servers</h2>
@@ -69,7 +70,10 @@ Firestore) as its backend. The following is stored there:</p>
   <tr><td><strong>Your best score</strong></td><td>The public leaderboard</td></tr>
   <tr><td><strong>Friend connections and invitations</strong></td><td>The friends list</td></tr>
   <tr><td><strong>Temporary multiplayer data</strong> — a queue entry while you look for an opponent, and the match itself</td><td>To pair you with another player and run the game. Removed when you stop searching or leave.</td></tr>
+  <tr><td><strong>Card reports you choose to submit</strong> — the card, a reason, your anonymous user ID and the time. The <em>&ldquo;Other&rdquo;</em> reason lets you add free text (up to 300 characters).</td><td>To find and fix wrong cards and to prevent abuse. Reporting is optional, the report is not shown to other players, and you can ask us to remove it.</td></tr>
 </table>
+<p>Matchmaking is handled by <strong>Google Cloud Functions</strong> running in the
+<code>europe-west1</code> region, which read your queue entry and nickname to create a match.</p>
 
 <p>Google may additionally process technical information such as your IP address and device
 type in the course of operating these services. See
@@ -101,8 +105,10 @@ or any information you would not want to be public, as your nickname.</p>
 choose to watch one to regain a used hint or lifeline. There are no banner or interstitial
 adverts.</p>
 
-<p>Google AdMob may collect and process your device's advertising identifier and related
-technical data in order to serve and measure adverts. See
+<p>Google AdMob may collect and process your device's advertising identifier, your
+<strong>approximate location</strong> (derived from your IP address) and related
+technical data in order to serve and measure adverts. This information is shared with
+Google as our advertising partner. See
 <a href="https://support.google.com/admob/answer/6128543">how Google uses information from
 apps that use its services</a>.</p>
 
@@ -130,6 +136,8 @@ automatically when a search or match ends.</p>
 connections — email the address below. Please include your player tag so the right record can
 be found. Uninstalling the game removes everything held on your device, but does not by itself
 remove your leaderboard entry.</p>
+<p>Step-by-step instructions are on our
+<a href="guess-when-delete.html">account &amp; data deletion page</a>.</p>
 
 <h2>Your rights</h2>
 <p>If you are in the United Kingdom or the European Economic Area, you have the right to
@@ -142,7 +150,7 @@ right to complain to your national data protection authority.</p>
 changes will be announced in the game.</p>
 
 <h2>Contact</h2>
-<p>KozzzyGames — <a href="mailto:donis2007@gmail.com">donis2007@gmail.com</a></p>
+<p>KozzzyGames — <a href="mailto:kozzzygames@gmail.com">kozzzygames@gmail.com</a></p>
 
 </body>
 </html>
